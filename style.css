@@ -26,15 +26,6 @@ body {
     flex-direction: column;
     padding: 0 25px;
 }
-.form-login {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 100vh;
-
-}
 .content .title {
     font-size: clamp(3rem, 8vw, 8rem);
     color: #1D3557;
@@ -81,28 +72,19 @@ body {
 .card-container .card img {
     width: clamp(40px, 60%, 64px);
 }
-
-.form-login .login {
+.form-login {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-login .form {
+    background-color: #002A36;
+    width: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
-    height: 50%;
-    background-color: #002A36;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    align-items: center;
 }
-.form-login .login .input-user {
-    position: relative;
-    padding: 10px;
-    outline: none;
-    background: none;
-    border-radius: 10px;
-    border: solid 1px #1D3557;
-    height: 60px;
-    font-size: 1.2em;
-    color: rgba(0, 0, 0, 0.7);
-    
-}
-

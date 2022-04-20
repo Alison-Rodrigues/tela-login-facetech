@@ -78,6 +78,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    flex-direction: column;
 }
 .form-login .form {
     background-color: #002A36;
@@ -87,4 +89,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.form-login .form .input-user {
+    margin: 10px 0;
+    position: relative;
+}
+.form-login .form .input-user .input {
+    padding: 10px;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    border: solid 2px #008793;
+    position: relative;
+}
+.form-login .form .input-user .label-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
 }

@@ -9,14 +9,11 @@
 body {
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     background-repeat: space;
-}
-.container {
     display: flex;
-    width: 100%;
-    height: 100vh;
     justify-content: center;
     align-items: center;
 }
+
 .content {
     display: flex;
     width: 60%;
@@ -50,7 +47,7 @@ body {
     flex-wrap: wrap;
 }
 .card-container .card {
-    height: 80%;
+    height: 220px;
     width: 180px;
     background-color: #002A36;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -58,12 +55,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 25px;
+    padding: 20px;
     border-radius: 10px;
-    color: #FFFFFF;
+    color: #D2FADF;
     font-weight: 500;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     margin: 20px;
 }
 .card-container .card:first-child {
@@ -72,41 +69,83 @@ body {
 .card-container .card img {
     width: clamp(40px, 60%, 64px);
 }
-.form-login {
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 40%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
 }
-.form-login .form {
-    background-color: #002A36;
-    width: 300px;
-    height: 400px;
+.form-container .form-user {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 350px;
+    height: 400px;
+    background-color: #002A36;
     border-radius: 10px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
 }
-.form-login .form .input-user {
-    margin: 10px 0;
-    position: relative;
+.form-container .form-user .title-form {
+    color: #D2FADF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
-.form-login .form .input-user .input {
-    padding: 10px;
-    border-radius: 10px;
+.form-container .form-user .input-user {
+    width: 100%;
+    padding: 12px;
+    border-bottom: 10px;
+    margin: 20px 0;
     background: none;
-    outline: none;
-    border: solid 2px #008793;
-    position: relative;
+    border: solid 2px #00bf72;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: 0;
+    color: #00bf72;
+    letter-spacing: 2px;
 }
-.form-login .form .input-user .label-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    pointer-events: none;
+.form-container .form-user .input-user::placeholder {
+    color: #EEEEEE;
+    opacity: 0.5;
+    letter-spacing: 2px;
+}
+.form-container .form-user .input-user:focus,
+.form-container .form-user .input-user:not(:placeholder-shown) {
+    background-color: #021F28;
+}
+.form-container .form-user input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #00bf72;
+    font-size: 1.2rem;
+    color: #D2FADF;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+.form-container .form-user input[type="submit"]:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #00A965;
+}
+.form-container .form-user a {
+    text-decoration: none;
+    color: #D2FADF;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    opacity: 0.5;
+    transition: .2s;
+}
+.form-container .form-user a:hover {
+    text-decoration: underline;
+    opacity: 1;
 }

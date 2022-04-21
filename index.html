@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="screen">
 </head>
 <body>
-    <main class="container">
-
+    
         <section class="content">
             <h1 class="title">facetech</h1>
             <div class="card-container">
@@ -28,26 +27,16 @@
             </div><!--card-container-->
             
         </section><!--content-->
-        <section class="form-login">
-            <form action="" class="form">
-                <span>Entrar</span>
-                <div class="input-user">
-                    <input type="email" name="email" id="email" class="input email" placeholder=" ">
-                    <label for="email" class="label-input">E-mail</label>
-                </div><!--input-user-->
-                <div class="input-user">
-                    <input type="password" name="password" id="password" class="input password" placeholder=" ">
-                    <label for="password" class="label-input">Senha</label>
-                </div><!--input-user-->
-                <div class="button">
-                    <input type="submit" value="ENTRAR">
-                </div><!--button-->
-                
-            </form><!--form-->
-        </section><!--form-login-->
-        
-    </main>
-    
 
+        <section class="form-container">
+            <form action="" class="form-user">
+                <span class="title-form">Login</span>
+                <input type="email" name="email" id="email" class="input-user email" placeholder="E-mail"/>
+                <input type="password" name="password" id="password" class="input-user password" placeholder="Senha"/>
+                <input type="submit" value="Entrar" class="button"/>
+                <a href="#"><span>Esqueceu a senha?</span></a>
+            </form><!--form-user-->
+        </section><!--form-container-->
+        
 </body>
 </html>
